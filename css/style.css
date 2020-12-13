@@ -21,8 +21,6 @@ a {
 p {
     font-size: 13px;
     line-height: 1.3em;
-    padding-left: 40%;
-    padding-right: 40%;
 }
 
 h1 {
@@ -73,6 +71,11 @@ h1 {
 .page-navigation li a:hover {
     color: yellowgreen;
     background-color: black;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
 }
 
 
