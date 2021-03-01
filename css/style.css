@@ -2,7 +2,9 @@
 
 body {
     font-family: Arial, San-Serif;
-    font-size: 100%;
+    background-color: yellowgreen;
+    width: 100%;
+    margin: 0;
 }
 
 ul {
@@ -36,8 +38,28 @@ h1 {
 /* HEADER */
 
 .header {
+    position: relative;
     padding: 50px 0;
-    background-color: yellowgreen;
+    background-image: url(../image/header-fon.jpg);
+}
+
+.header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+}
+
+.inner {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
 }
 
 .header h1,
@@ -71,11 +93,6 @@ h1 {
 .page-navigation li a:hover {
     color: yellowgreen;
     background-color: black;
-}
-
-.social-icon {
-    width: 40px;
-    height: 40px;
 }
 
 
@@ -191,13 +208,93 @@ h3 {
     text-align: center;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+.col-75 input[type=text],
+.col-75 select,
+.col-75 textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.col-75 input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.col-75 input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container1 {
+    border-radius: 5px;
+    background-color: #4CAF50;
+    padding: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.color {
+    color: #fff;
+    font-size: larger;
+    display: inline;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
 
 /* FOOTER */
 
 .footer {
-    background-color: yellowgreen;
+    background-color: #222;
     color: white;
-    padding: 20px 0;
+    padding: 2px 0;
     margin-top: 30px;
     text-align: center;
 }

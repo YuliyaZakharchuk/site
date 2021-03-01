@@ -1,73 +1,108 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Contacts</title>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
-	<body>
-	<!-- HEADER -->
-	<header class="header">
-		<div class="container">
-			<h1>Медитація: що, як і хто?</h1>
-			<h2>
-				<small>Аргументи і факти</small>
-			</h2>
-		</div>
-	</header>
-	<!-- /HEADER -->
-	<!-- NAVIGATION -->
-	<nav class="page-navigation">
-		<div class="container">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contacts</a></li>
-			</ul>
 
-			<!-- LOGIN FORM -->
-			<form action="#" class="login">
-				<input type="text" placeholder="Login" required>
-				<input type="password" placeholder="Password" required>
-				<input type="submit" value="Sign In">
-			</form>
-			<!-- /LOGIN FORM -->
-		</div>
-	</nav>
-	<!-- /NAVIGATION -->
-	<!-- MAIN SECTION -->
-	<main>
-		<h1>Контакти</h1>
-		<div>
-			<center><p1> Наш номер телефону</p></center>
-			<center><p1> 0673395623,0992228910</p></center>
-			
-		</div>
-		
-		
-			<h3>Ваше ім'я</h3>
-<center ><input type="text" name="firstname"></center>
+<head>
+    <title>Contacts</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 
-<h3>E-mail</h3>
-<center ><input type="text" name="firstname" placeholder="123@gmail.com"></center>
-<h3>Номер телефону</h3>
-<center><input type="tel" maxlength="tel" placeholder="+380"></center>
-<p><h3>Зв'яжіться з нами.</h3></p>
-<center><textarea name="text" cols="30" rows="6" placeholder="Введіть текст повідомлення"></textarea></center>
-<p><input type="submit" name="batton1"></p>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container inner">
+            <h1>Медитація: що, як і хто?</h1>
+            <h2>
+                <small>Аргументи і факти</small>
+            </h2>
+        </div>
+    </header>
+    <!-- /HEADER -->
+    <!-- NAVIGATION -->
+    <nav class="page-navigation">
+        <div class="container">
+            <ul>
+                <li><a href="home.html">Головна</a></li>
+                <li><a href="Contacts.html">Контакти</a></li>
+            </ul>
+
+            <!-- LOGIN FORM -->
+            <form action="#" class="login">
+                <input type="text" placeholder="Логін" required>
+                <input type="password" placeholder="Пароль" required>
+                <input type="submit" value="Увійти">
+            </form>
+            <!-- /LOGIN FORM -->
+        </div>
+    </nav>
+    <!-- /NAVIGATION -->
+    <!-- MAIN SECTION -->
+    <main>
+        <h1>Зв'яжіться з нами</h1>
+        <div class="container1">
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Ім'я</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Ваше ім'я">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Телефон</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="+380">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Запитання</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Поле для запитання" style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <center><input type="submit" value="Відправити"></center>
+                </div>
+            </form>
+        </div>
+        <h1>Наші контакти</h1>
+        <div class="container1">
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="color">
+                        <label for="fname"> Телефон</label>
+                    </div>
+                    <p class="color">0673395623</p>
+
+                </div>
+                <div class="row">
+                    <div class="color">
+                        <label for="lname">Ел. пошта</label>
+                    </div>
+                    <p class="color">yulua03071992@gmail.com</p>
 
 
-		
-		
-	</main>
-	<!-- /MAIN SECTION -->
-	<!-- FOOTER -->
-	<footer class="footer">
-		<div class="container">
-			<p>Захарчук Юлія, 2020</p>
-		</div>
-	</footer>
-	<!-- /FOOTER -->
-	</body>
+            </form>
+
+
+
+
+    </main>
+    <!-- /MAIN SECTION -->
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p> © Захарчук Юлія, 2020</p>
+        </div>
+    </footer>
+    <!-- /FOOTER -->
+</body>
+
 </html>
