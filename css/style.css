@@ -249,6 +249,17 @@ label {
     margin-right: auto;
 }
 
+.sand input {
+    height: 50px;
+    width: 250px;
+    margin-left: 150px;
+    margin-top: 10px;
+    background-color: green;
+    color: honeydew;
+    border: none;
+    border-radius: 4px;
+}
+
 .col-25 {
     float: left;
     width: 25%;
